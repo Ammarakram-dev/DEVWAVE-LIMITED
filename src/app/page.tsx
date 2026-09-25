@@ -1,5 +1,5 @@
 "use client";
-
+import SiteUtilities from "@/components/SiteUtilities";
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
@@ -83,7 +83,8 @@ const services = [
     title: "Artificial Intelligence",
     short: "AI & ML",
     text: "Intelligent systems, machine learning, language technologies and practical AI applications.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
     icon: BrainCircuit,
     capabilities: [
       "Machine Learning",
@@ -96,7 +97,8 @@ const services = [
     title: "AI Automation",
     short: "Automation",
     text: "Automation systems that connect tools, information and workflows to reduce repetitive work.",
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1400&q=85",
     icon: Zap,
     capabilities: ["Workflow Automation", "AI Agents", "System Integration"],
   },
@@ -105,7 +107,8 @@ const services = [
     title: "Software Engineering",
     short: "Engineering",
     text: "Scalable web platforms, APIs, applications and digital products engineered around real needs.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=85",
     icon: Layers3,
     capabilities: ["Web Platforms", "APIs", "Digital Products"],
   },
@@ -114,7 +117,8 @@ const services = [
     title: "Web Development",
     short: "Web",
     text: "Responsive, accessible and high-performance websites and web applications built for modern businesses.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1400&q=85",
     icon: Globe2,
     capabilities: ["Frontend", "Backend", "Full Stack"],
   },
@@ -123,7 +127,8 @@ const services = [
     title: "WordPress Development",
     short: "WordPress",
     text: "Professional WordPress websites, custom experiences, performance improvements and business-focused builds.",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1400&q=85",
     icon: Globe2,
     capabilities: ["Business Websites", "Custom Themes", "Optimization"],
   },
@@ -132,7 +137,8 @@ const services = [
     title: "Mobile App Development",
     short: "Mobile",
     text: "Modern mobile applications designed around usability, reliability and real product requirements.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1400&q=85",
     icon: Layers3,
     capabilities: ["Android", "Mobile UI", "API Integration"],
   },
@@ -141,7 +147,8 @@ const services = [
     title: "Data Analytics",
     short: "Data",
     text: "Data pipelines, analysis and visualization that turn information into useful decisions.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=85",
     icon: Database,
     capabilities: ["Python", "Analytics", "Visualization"],
   },
@@ -150,7 +157,8 @@ const services = [
     title: "Cybersecurity",
     short: "Security",
     text: "Security-minded software, monitoring systems and application protection.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1400&q=85",
     icon: ShieldCheck,
     capabilities: ["Application Security", "Monitoring", "Secure Development"],
   },
@@ -159,7 +167,8 @@ const services = [
     title: "SEO Services",
     short: "SEO",
     text: "Technical and content-focused search optimization designed to improve discoverability and website foundations.",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1400&q=85",
     icon: Search,
     capabilities: ["Technical SEO", "On-Page SEO", "Search Foundations"],
   },
@@ -168,7 +177,8 @@ const services = [
     title: "Cloud & Integrations",
     short: "Cloud",
     text: "Connected cloud services, APIs and integrations that help technology systems work together.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=85",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=85",
     icon: Globe2,
     capabilities: ["Cloud Services", "APIs", "Integrations"],
   },
@@ -193,7 +203,8 @@ const projects = [
   {
     name: "AUREX",
     type: "Spatial Intelligence",
-    image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1600&q=88",
+    image:
+      "https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1600&q=88",
     description:
       "An exploration into intelligent understanding of physical environments, human spatial state and spatial information.",
     technologies: ["Python", "Computer Vision", "MediaPipe", "AI"],
@@ -201,7 +212,8 @@ const projects = [
   {
     name: "ORVEXA",
     type: "AI Automation",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1600&q=88",
+    image:
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1600&q=88",
     description:
       "An autonomous workflow concept focused on planning, execution and intelligent task coordination.",
     technologies: ["Next.js", "FastAPI", "AI", "Automation"],
@@ -209,7 +221,8 @@ const projects = [
   {
     name: "ATMOSIA",
     type: "Digital Product",
-    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1600&q=88",
+    image:
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1600&q=88",
     description:
       "A live digital product exploring modern interfaces, real-time information and responsive experiences.",
     technologies: ["Web", "React", "Modern UI"],
@@ -217,7 +230,8 @@ const projects = [
   {
     name: "NEXUS",
     type: "Productivity",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=88",
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=88",
     description:
       "A focused productivity web experience designed around useful organization and everyday workflow management.",
     technologies: ["HTML", "CSS", "JavaScript", "Local Storage"],
@@ -225,7 +239,8 @@ const projects = [
   {
     name: "SENTINEL",
     type: "Cybersecurity",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=88",
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=88",
     description:
       "A threat-monitoring system designed around security visibility and intelligent analysis.",
     technologies: ["FastAPI", "Python", "Security", "Monitoring"],
@@ -233,7 +248,8 @@ const projects = [
   {
     name: "AETHER",
     type: "Language Model Research",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1600&q=88",
+    image:
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1600&q=88",
     description:
       "A CPU-conscious local language-model research project exploring model architecture and training foundations.",
     technologies: ["Python", "PyTorch", "LLM", "Research"],
@@ -241,7 +257,8 @@ const projects = [
   {
     name: "KYNTRA",
     type: "Mobile Application",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1600&q=88",
+    image:
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1600&q=88",
     description:
       "A mobile application project focused on practical product development and a structured mobile experience.",
     technologies: ["Android", "Java", "Mobile", "UI"],
@@ -435,6 +452,7 @@ export default function Home() {
 
   return (
     <main className="devwave-app">
+      <SiteUtilities />
       <header className="nav-shell">
         <div className="nav-inner">
           <button
@@ -443,10 +461,7 @@ export default function Home() {
             aria-label="Open About DEVWAVE"
           >
             <span className="brand-symbol brand-symbol-3d brand-logo-image">
-              <img
-                src="/logo.png"
-                alt="DEVWAVE"
-              />
+              <img src="/logo.png" alt="DEVWAVE" />
             </span>
 
             <span>
@@ -642,64 +657,65 @@ export default function Home() {
           }}
         >
           <div className="about-modal">
-        <div className="about-modal-top">
-          <span>DEVWAVE / ABOUT</span>
+            <div className="about-modal-top">
+              <span>DEVWAVE / ABOUT</span>
 
-          <button
-            className="nav-icon"
-            onClick={() => setAboutOpen(false)}
-            aria-label="Close About"
-          >
-            <X size={18} />
-          </button>
-        </div>
-
-        <div className="about-modal-grid">
-          <div className="about-modal-mark">
-            <span>DW</span>
-            <small>
-              TECHNOLOGY
-              <br />
-              INNOVATION
-              <br />
-              SOLUTIONS
-            </small>
-          </div>
-
-          <div className="about-modal-content">
-            <div className="section-label">ABOUT DEVWAVE</div>
-
-            <h2>Technology built with purpose.</h2>
-
-            <p className="about-lead">
-              DEVWAVE is a technology company focused on intelligent software,
-              artificial intelligence, automation, and digital products.
-            </p>
-
-            <p>
-              We turn meaningful ideas and complex problems into reliable,
-              practical technology designed for real-world use.
-            </p>
-
-            <div className="about-principles">
-              <span>Innovation</span>
-              <span>Reliability</span>
-              <span>Simplicity</span>
+              <button
+                className="nav-icon"
+                onClick={() => setAboutOpen(false)}
+                aria-label="Close About"
+              >
+                <X size={18} />
+              </button>
             </div>
 
-            <Link
-              href="#contact"
-              className="button button-dark"
-              onClick={() => setAboutOpen(false)}
-            >
-              Start a conversation
-              <ArrowRight size={16} />
-            </Link>
+            <div className="about-modal-grid">
+              <div className="about-modal-mark">
+                <span>DW</span>
+                <small>
+                  TECHNOLOGY
+                  <br />
+                  INNOVATION
+                  <br />
+                  SOLUTIONS
+                </small>
+              </div>
+
+              <div className="about-modal-content">
+                <div className="section-label">ABOUT DEVWAVE</div>
+
+                <h2>Technology built with purpose.</h2>
+
+                <p className="about-lead">
+                  DEVWAVE is a technology company focused on intelligent
+                  software, artificial intelligence, automation, and digital
+                  products.
+                </p>
+
+                <p>
+                  We turn meaningful ideas and complex problems into reliable,
+                  practical technology designed for real-world use.
+                </p>
+
+                <div className="about-principles">
+                  <span>Innovation</span>
+                  <span>Reliability</span>
+                  <span>Simplicity</span>
+                </div>
+
+                <Link
+                  href="#contact"
+                  className="button button-dark"
+                  onClick={() => setAboutOpen(false)}
+                >
+                  Start a conversation
+                  <ArrowRight size={16} />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  )}
+      )}
       <section className="hero-section">
         <div className="hero-copy">
           <div className="eyebrow">
@@ -776,9 +792,15 @@ export default function Home() {
 
           <div className="intro-text">
             <p className="large-text">
-              DEVWAVE is an innovation-led technology company focused on software, artificial intelligence, automation, and emerging technologies.</p>
+              DEVWAVE is an innovation-led technology company focused on
+              software, artificial intelligence, automation, and emerging
+              technologies.
+            </p>
 
-            <p>We combine engineering and product thinking to turn complex ideas into reliable technology that creates real-world value.</p>
+            <p>
+              We combine engineering and product thinking to turn complex ideas
+              into reliable technology that creates real-world value.
+            </p>
 
             <button className="text-button" onClick={() => setAboutOpen(true)}>
               Read about DEVWAVE

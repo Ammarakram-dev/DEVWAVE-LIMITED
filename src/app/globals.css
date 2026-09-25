@@ -7050,8 +7050,8 @@ html[data-theme="dark"] .dw-admin-application-card {
   min-height: 100vh;
   padding: 42px clamp(20px, 4vw, 64px) 72px;
   background:
-    radial-gradient(circle at 85% 0%, rgba(37, 99, 255, .10), transparent 28%),
-    radial-gradient(circle at 5% 20%, rgba(225, 29, 72, .07), transparent 25%),
+    radial-gradient(circle at 85% 0%, rgba(37, 99, 255, 0.1), transparent 28%),
+    radial-gradient(circle at 5% 20%, rgba(225, 29, 72, 0.07), transparent 25%),
     var(--background, #08090d);
   color: var(--foreground, #fff);
 }
@@ -7064,11 +7064,11 @@ html[data-theme="dark"] .dw-admin-application-card {
   align-items: flex-end;
   justify-content: space-between;
   gap: 24px;
-  border: 1px solid rgba(255,255,255,.09);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 24px;
-  background: rgba(255,255,255,.035);
+  background: rgba(255, 255, 255, 0.035);
   backdrop-filter: blur(18px);
-  box-shadow: 0 24px 70px rgba(0,0,0,.22);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
 }
 
 .dw-eyebrow {
@@ -7078,7 +7078,7 @@ html[data-theme="dark"] .dw-admin-application-card {
   margin-bottom: 10px;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .18em;
+  letter-spacing: 0.18em;
   color: #7fa1ff;
 }
 
@@ -7088,19 +7088,19 @@ html[data-theme="dark"] .dw-admin-application-card {
   height: 7px;
   border-radius: 50%;
   background: #e11d48;
-  box-shadow: 0 0 14px rgba(225,29,72,.7);
+  box-shadow: 0 0 14px rgba(225, 29, 72, 0.7);
 }
 
 .dw-admin-header h1 {
   margin: 0;
   font-size: clamp(30px, 4vw, 46px);
   line-height: 1;
-  letter-spacing: -.045em;
+  letter-spacing: -0.045em;
 }
 
 .dw-admin-header p {
   margin: 12px 0 0;
-  color: rgba(255,255,255,.55);
+  color: rgba(255, 255, 255, 0.55);
   font-size: 14px;
 }
 
@@ -7109,10 +7109,10 @@ html[data-theme="dark"] .dw-admin-application-card {
   border: 0;
   cursor: pointer;
   transition:
-    transform .2s ease,
-    box-shadow .2s ease,
-    background .2s ease,
-    border-color .2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .dw-main-button {
@@ -7122,7 +7122,7 @@ html[data-theme="dark"] .dw-admin-application-card {
   color: #fff;
   font-weight: 750;
   background: linear-gradient(135deg, #e11d48, #2563ff);
-  box-shadow: 0 12px 30px rgba(37,99,255,.22);
+  box-shadow: 0 12px 30px rgba(37, 99, 255, 0.22);
 }
 
 .dw-secondary-button {
@@ -7131,8 +7131,8 @@ html[data-theme="dark"] .dw-admin-application-card {
   border-radius: 11px;
   color: #fff;
   font-weight: 700;
-  background: rgba(255,255,255,.055);
-  border: 1px solid rgba(255,255,255,.11);
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.11);
 }
 
 .dw-main-button:hover,
@@ -7142,7 +7142,7 @@ html[data-theme="dark"] .dw-admin-application-card {
 
 .dw-main-button:disabled,
 .dw-secondary-button:disabled {
-  opacity: .45;
+  opacity: 0.45;
   cursor: not-allowed;
   transform: none;
 }
@@ -7163,11 +7163,11 @@ html[data-theme="dark"] .dw-admin-application-card {
   padding: 22px 24px;
   min-height: 108px;
   border-radius: 18px;
-  border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   background: linear-gradient(
     145deg,
-    rgba(255,255,255,.055),
-    rgba(255,255,255,.018)
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.018)
   );
 }
 
@@ -7179,24 +7179,24 @@ html[data-theme="dark"] .dw-admin-application-card {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background: rgba(37,99,255,.08);
+  background: rgba(37, 99, 255, 0.08);
   filter: blur(5px);
 }
 
 .dw-admin-stats span {
   display: block;
-  color: rgba(255,255,255,.48);
+  color: rgba(255, 255, 255, 0.48);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .dw-admin-stats strong {
   display: block;
   margin-top: 10px;
   font-size: 32px;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 /* TASK MANAGER */
@@ -7205,21 +7205,21 @@ html[data-theme="dark"] .dw-admin-application-card {
   max-width: 1500px;
   margin: 0 auto 28px;
   padding: 30px;
-  border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
-  background: rgba(255,255,255,.028);
-  box-shadow: 0 24px 70px rgba(0,0,0,.18);
+  background: rgba(255, 255, 255, 0.028);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
 }
 
 .dw-task-manager-header h2 {
   margin: 0;
   font-size: 23px;
-  letter-spacing: -.025em;
+  letter-spacing: -0.025em;
 }
 
 .dw-task-manager-header p {
   margin: 7px 0 0;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
 }
 
@@ -7245,27 +7245,29 @@ html[data-theme="dark"] .dw-admin-application-card {
 .dw-task-create textarea,
 .dw-admin-section select {
   width: 100%;
-  border: 1px solid rgba(255,255,255,.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   outline: none;
   border-radius: 12px;
   padding: 13px 14px;
   color: #fff;
-  background: rgba(0,0,0,.22);
+  background: rgba(0, 0, 0, 0.22);
   font: inherit;
-  transition: border-color .2s ease, box-shadow .2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .dw-task-create input:focus,
 .dw-task-create select:focus,
 .dw-task-create textarea:focus,
 .dw-admin-section select:focus {
-  border-color: rgba(37,99,255,.65);
-  box-shadow: 0 0 0 3px rgba(37,99,255,.1);
+  border-color: rgba(37, 99, 255, 0.65);
+  box-shadow: 0 0 0 3px rgba(37, 99, 255, 0.1);
 }
 
 .dw-task-create input::placeholder,
 .dw-task-create textarea::placeholder {
-  color: rgba(255,255,255,.35);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .dw-task-list {
@@ -7281,8 +7283,8 @@ html[data-theme="dark"] .dw-admin-application-card {
   gap: 20px;
   padding: 18px;
   border-radius: 16px;
-  border: 1px solid rgba(255,255,255,.07);
-  background: rgba(255,255,255,.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .dw-task-item > div {
@@ -7293,7 +7295,7 @@ html[data-theme="dark"] .dw-admin-application-card {
   font-size: 10px;
   color: #7fa1ff;
   text-transform: uppercase;
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
   font-weight: 800;
 }
 
@@ -7304,7 +7306,7 @@ html[data-theme="dark"] .dw-admin-application-card {
 
 .dw-task-item p {
   margin: 0;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
   line-height: 1.55;
 }
@@ -7312,15 +7314,15 @@ html[data-theme="dark"] .dw-admin-application-card {
 .dw-task-item small {
   display: block;
   margin-top: 8px;
-  color: rgba(255,255,255,.35);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .dw-task-empty {
   margin: 0;
   padding: 20px;
   text-align: center;
-  color: rgba(255,255,255,.38);
-  border: 1px dashed rgba(255,255,255,.1);
+  color: rgba(255, 255, 255, 0.38);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
   border-radius: 14px;
 }
 
@@ -7341,9 +7343,9 @@ html[data-theme="dark"] .dw-admin-application-card {
   max-height: calc(100vh - 48px);
   overflow-y: auto;
   padding: 10px;
-  border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 22px;
-  background: rgba(255,255,255,.025);
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .dw-admin-list::-webkit-scrollbar {
@@ -7351,7 +7353,7 @@ html[data-theme="dark"] .dw-admin-application-card {
 }
 
 .dw-admin-list::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,.15);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
 }
 
@@ -7369,19 +7371,25 @@ html[data-theme="dark"] .dw-admin-application-card {
   text-align: left;
   background: transparent;
   cursor: pointer;
-  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .dw-admin-application:hover {
   transform: translateX(2px);
-  background: rgba(255,255,255,.045);
-  border-color: rgba(255,255,255,.08);
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .dw-admin-application.active {
-  background:
-    linear-gradient(135deg, rgba(225,29,72,.12), rgba(37,99,255,.1));
-  border-color: rgba(37,99,255,.32);
+  background: linear-gradient(
+    135deg,
+    rgba(225, 29, 72, 0.12),
+    rgba(37, 99, 255, 0.1)
+  );
+  border-color: rgba(37, 99, 255, 0.32);
 }
 
 .dw-admin-application strong {
@@ -7392,7 +7400,7 @@ html[data-theme="dark"] .dw-admin-application-card {
 .dw-admin-application span {
   display: block;
   margin-top: 5px;
-  color: rgba(255,255,255,.43);
+  color: rgba(255, 255, 255, 0.43);
   font-size: 11px;
 }
 
@@ -7401,7 +7409,7 @@ html[data-theme="dark"] .dw-admin-application-card {
   padding: 6px 9px;
   border-radius: 999px;
   color: #b8c7ff;
-  background: rgba(37,99,255,.11);
+  background: rgba(37, 99, 255, 0.11);
   font-size: 10px;
   font-weight: 800;
 }
@@ -7411,10 +7419,10 @@ html[data-theme="dark"] .dw-admin-application-card {
 .dw-admin-detail {
   min-width: 0;
   padding: 30px;
-  border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
-  background: rgba(255,255,255,.028);
-  box-shadow: 0 24px 70px rgba(0,0,0,.18);
+  background: rgba(255, 255, 255, 0.028);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
 }
 
 .dw-admin-detail-header {
@@ -7424,18 +7432,18 @@ html[data-theme="dark"] .dw-admin-application-card {
   gap: 20px;
   padding-bottom: 25px;
   margin-bottom: 24px;
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .dw-admin-detail-header h2 {
   margin: 0;
   font-size: clamp(25px, 3vw, 34px);
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
 }
 
 .dw-admin-detail-header p {
   margin: 7px 0 0;
-  color: rgba(255,255,255,.48);
+  color: rgba(255, 255, 255, 0.48);
 }
 
 .dw-admin-fields {
@@ -7448,18 +7456,18 @@ html[data-theme="dark"] .dw-admin-application-card {
 .dw-admin-fields > div {
   padding: 16px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.065);
-  background: rgba(255,255,255,.025);
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .dw-admin-fields span,
 .dw-admin-section label {
   display: block;
   margin-bottom: 7px;
-  color: rgba(255,255,255,.4);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -7472,13 +7480,13 @@ html[data-theme="dark"] .dw-admin-application-card {
   margin-top: 16px;
   padding: 18px;
   border-radius: 15px;
-  border: 1px solid rgba(255,255,255,.065);
-  background: rgba(255,255,255,.022);
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  background: rgba(255, 255, 255, 0.022);
 }
 
 .dw-admin-section p {
   margin: 0;
-  color: rgba(255,255,255,.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
   line-height: 1.65;
   white-space: pre-wrap;
@@ -7505,7 +7513,7 @@ html[data-theme="dark"] .dw-admin-application-card {
   justify-content: center;
   text-align: center;
   padding: 35px;
-  border: 1px dashed rgba(255,255,255,.1);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
   border-radius: 18px;
 }
 
@@ -7516,19 +7524,19 @@ html[data-theme="dark"] .dw-admin-application-card {
 
 .dw-admin-empty p {
   margin: 8px 0;
-  color: rgba(255,255,255,.42);
+  color: rgba(255, 255, 255, 0.42);
   font-size: 13px;
 }
 
 .dw-admin-empty small {
-  color: rgba(255,255,255,.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* LIGHT MODE */
 
 html[data-theme="light"] .dw-admin-dashboard {
   background:
-    radial-gradient(circle at 85% 0%, rgba(37,99,255,.08), transparent 28%),
+    radial-gradient(circle at 85% 0%, rgba(37, 99, 255, 0.08), transparent 28%),
     #f5f7fb;
   color: #10131a;
 }
@@ -7537,9 +7545,9 @@ html[data-theme="light"] .dw-admin-header,
 html[data-theme="light"] .dw-task-manager,
 html[data-theme="light"] .dw-admin-detail,
 html[data-theme="light"] .dw-admin-list {
-  background: rgba(255,255,255,.82);
-  border-color: rgba(15,23,42,.09);
-  box-shadow: 0 20px 60px rgba(15,23,42,.07);
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(15, 23, 42, 0.09);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.07);
 }
 
 html[data-theme="light"] .dw-admin-header p,
@@ -7551,15 +7559,15 @@ html[data-theme="light"] .dw-admin-section label,
 html[data-theme="light"] .dw-admin-detail-header p,
 html[data-theme="light"] .dw-admin-section p,
 html[data-theme="light"] .dw-admin-stats span {
-  color: rgba(15,23,42,.52);
+  color: rgba(15, 23, 42, 0.52);
 }
 
 html[data-theme="light"] .dw-admin-stats > div,
 html[data-theme="light"] .dw-task-item,
 html[data-theme="light"] .dw-admin-fields > div,
 html[data-theme="light"] .dw-admin-section {
-  background: rgba(15,23,42,.025);
-  border-color: rgba(15,23,42,.08);
+  background: rgba(15, 23, 42, 0.025);
+  border-color: rgba(15, 23, 42, 0.08);
 }
 
 html[data-theme="light"] .dw-task-create input,
@@ -7568,13 +7576,13 @@ html[data-theme="light"] .dw-task-create textarea,
 html[data-theme="light"] .dw-admin-section select {
   color: #10131a;
   background: #fff;
-  border-color: rgba(15,23,42,.12);
+  border-color: rgba(15, 23, 42, 0.12);
 }
 
 html[data-theme="light"] .dw-secondary-button {
   color: #10131a;
-  background: rgba(15,23,42,.045);
-  border-color: rgba(15,23,42,.1);
+  background: rgba(15, 23, 42, 0.045);
+  border-color: rgba(15, 23, 42, 0.1);
 }
 
 html[data-theme="light"] .dw-admin-application {
@@ -7582,11 +7590,11 @@ html[data-theme="light"] .dw-admin-application {
 }
 
 html[data-theme="light"] .dw-admin-application span {
-  color: rgba(15,23,42,.48);
+  color: rgba(15, 23, 42, 0.48);
 }
 
 html[data-theme="light"] .dw-admin-empty {
-  border-color: rgba(15,23,42,.12);
+  border-color: rgba(15, 23, 42, 0.12);
 }
 
 /* RESPONSIVE */
@@ -7671,5 +7679,481 @@ html[data-theme="light"] .dw-admin-empty {
 
   .dw-admin-detail-header .dw-main-button {
     width: 100%;
+  }
+}
+/* =========================================================
+   DEVWAVE — QUICK CONTACT / ONLINE STATUS / TEAM REFINEMENT
+   ========================================================= */
+
+.quick-contact-trigger {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9990;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(8, 9, 13, 0.92);
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.quick-contact-trigger:hover {
+  transform: translateY(-2px);
+  border-color: #2563ff;
+}
+
+.quick-contact-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(14px);
+}
+
+.quick-contact-modal {
+  position: relative;
+  width: min(500px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  background: #08090d;
+  color: #ffffff;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+}
+
+.quick-contact-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.quick-contact-label {
+  margin-bottom: 8px;
+  color: #2563ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.quick-contact-modal h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  letter-spacing: -0.03em;
+}
+
+.quick-contact-modal p {
+  margin: 0 0 24px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.6;
+}
+
+.quick-contact-modal form {
+  display: grid;
+  gap: 12px;
+}
+
+.quick-contact-modal input,
+.quick-contact-modal textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 13px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.045);
+  color: #ffffff;
+  padding: 13px 14px;
+  font: inherit;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.quick-contact-modal textarea {
+  resize: vertical;
+}
+
+.quick-contact-modal input:focus,
+.quick-contact-modal textarea:focus {
+  border-color: #2563ff;
+  background: rgba(255, 255, 255, 0.065);
+}
+
+.quick-contact-modal input::placeholder,
+.quick-contact-modal textarea::placeholder {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.quick-contact-modal form > button {
+  margin-top: 4px;
+  border: 0;
+  border-radius: 13px;
+  padding: 14px 18px;
+  background: linear-gradient(90deg, #e11d48, #2563ff);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Online indicator */
+
+.devwave-online-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.devwave-online-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+}
+
+/* Team portraits */
+
+.team-section img {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.team-section {
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .quick-contact-trigger {
+    right: 16px;
+    bottom: 16px;
+    padding: 11px 15px;
+  }
+
+  .quick-contact-modal {
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  .team-section img {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+  }
+}
+.quick-contact-modal form > button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.quick-contact-error {
+  padding: 12px 14px;
+  border: 1px solid rgba(225, 29, 72, 0.35);
+  border-radius: 12px;
+  background: rgba(225, 29, 72, 0.08);
+  color: #ff8aa5;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.quick-contact-success {
+  text-align: center;
+  padding: 20px 0 4px;
+}
+
+.quick-contact-success-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.28);
+  color: #22c55e;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.quick-contact-success h2 {
+  margin: 0 0 10px;
+}
+
+.quick-contact-success p {
+  margin: 0 0 22px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.6;
+}
+
+.quick-contact-success button {
+  width: 100%;
+  border: 0;
+  border-radius: 13px;
+  padding: 14px 18px;
+  background: linear-gradient(90deg, #e11d48, #2563ff);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* =========================================================
+   DEVWAVE — PREMIUM LIVE STATUS
+   ========================================================= */
+
+.devwave-online-status {
+  position: fixed;
+  top: 22px;
+  right: 24px;
+  z-index: 9988;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  min-width: 96px;
+  padding: 9px 13px 9px 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.075),
+    rgba(255, 255, 255, 0.025)
+  );
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+
+  color: #fff;
+
+  cursor: default;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.devwave-online-status:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(34, 197, 94, 0.3);
+
+  box-shadow:
+    0 14px 42px rgba(0, 0, 0, 0.26),
+    0 0 28px rgba(34, 197, 94, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09);
+}
+
+/* Signal container */
+
+.devwave-online-signal {
+  position: relative;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+/* Core */
+
+.devwave-online-core {
+  position: relative;
+  z-index: 3;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  box-shadow:
+    0 0 8px rgba(34, 197, 94, 0.95),
+    0 0 18px rgba(34, 197, 94, 0.55);
+
+  animation: devwave-online-core 2s ease-in-out infinite;
+}
+
+/* Expanding rings */
+
+.devwave-online-ring {
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  border: 1px solid rgba(34, 197, 94, 0.75);
+  border-radius: 50%;
+
+  animation: devwave-online-pulse 2.4s ease-out infinite;
+}
+
+.devwave-online-ring.ring-two {
+  animation-delay: 1.2s;
+}
+
+/* Text */
+
+.devwave-online-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  line-height: 1;
+}
+
+.devwave-online-copy strong {
+  color: rgba(255, 255, 255, 0.94);
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+.devwave-online-copy small {
+  margin-top: 4px;
+
+  color: rgba(255, 255, 255, 0.38);
+
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+/* Core breathing */
+
+@keyframes devwave-online-core {
+  0%,
+  100% {
+    transform: scale(0.88);
+    opacity: 0.82;
+  }
+
+  50% {
+    transform: scale(1.18);
+    opacity: 1;
+  }
+}
+
+/* Radar pulse */
+
+@keyframes devwave-online-pulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.75;
+  }
+
+  70% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .devwave-online-status {
+    top: 14px;
+    right: 14px;
+
+    min-width: auto;
+
+    padding: 8px 10px 8px 8px;
+
+    gap: 8px;
+  }
+
+  .devwave-online-signal {
+    width: 20px;
+    height: 20px;
+  }
+
+  .devwave-online-copy strong {
+    font-size: 10px;
+  }
+
+  .devwave-online-copy small {
+    font-size: 6px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .devwave-online-core,
+  .devwave-online-ring {
+    animation: none;
+  }
+
+  .devwave-online-status {
+    transition: none;
+  }
+}
+/* DEVWAVE — MOVE ONLINE STATUS TO CLEAR SPACE */
+
+.devwave-online-status {
+  top: auto !important;
+  right: 24px !important;
+  bottom: 24px !important;
+
+  z-index: 9970 !important;
+}
+
+@media (max-width: 640px) {
+  .devwave-online-status {
+    right: 16px !important;
+    bottom: 76px !important;
   }
 }
