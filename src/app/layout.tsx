@@ -5,10 +5,11 @@ const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://devwavelimited.com";
 
 export const metadata: Metadata = {
+  verification: { google: "usuaieeMeMJqrVO6Pjl_G-rgAAJdAXJyKilCc-ypRMk" },
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "DEVWAVE — Technology. Innovation. Solutions.",
+    default: "DEVWAVE â€” Technology. Innovation. Solutions.",
     template: "%s | DEVWAVE",
   },
 
@@ -65,14 +66,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "DEVWAVE",
-    title: "DEVWAVE — Technology. Innovation. Solutions.",
+    title: "DEVWAVE â€” Technology. Innovation. Solutions.",
     description:
       "Building intelligent software, AI systems, automation solutions, and digital technology for the real world.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "DEVWAVE — Technology. Innovation. Solutions.",
+    title: "DEVWAVE â€” Technology. Innovation. Solutions.",
     description:
       "Building intelligent software, AI systems, automation solutions, and digital technology for the real world.",
   },
@@ -102,7 +103,7 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "DEVWAVE",
   url: siteUrl,
-  description: "DEVWAVE — Technology. Innovation. Solutions.",
+  description: "DEVWAVE â€” Technology. Innovation. Solutions.",
 };
 
 export default function RootLayout({
