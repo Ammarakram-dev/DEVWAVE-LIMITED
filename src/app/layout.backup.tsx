@@ -1,18 +1,15 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://devwave-limited.vercel.app";
 
 export const metadata: Metadata = {
+  verification: { google: "usuaieeMeMJqrVO6Pjl_G-rgAAJdAXJyKilCc-ypRMk" },
   metadataBase: new URL(siteUrl),
 
-  verification: {
-    google: "usuaieeMeMJqrVO6Pjl_G-rgAAJdAXJyKilCc-ypRMk",
-  },
-
   title: {
-    default: "DEVWAVE - Technology. Innovation. Solutions.",
+    default: "DEVWAVE â€” Technology. Innovation. Solutions.",
     template: "%s | DEVWAVE",
   },
 
@@ -64,33 +61,19 @@ export const metadata: Metadata = {
     },
   },
 
-  icons: {
-    icon: [
-      {
-        url: "/favicon.ico",
-        type: "image/x-icon",
-      },
-      {
-        url: "/icon.png",
-        type: "image/png",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
-
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
     siteName: "DEVWAVE",
-    title: "DEVWAVE - Technology. Innovation. Solutions.",
+    title: "DEVWAVE â€” Technology. Innovation. Solutions.",
     description:
       "Building intelligent software, AI systems, automation solutions, and digital technology for the real world.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "DEVWAVE - Technology. Innovation. Solutions.",
+    title: "DEVWAVE â€” Technology. Innovation. Solutions.",
     description:
       "Building intelligent software, AI systems, automation solutions, and digital technology for the real world.",
   },
@@ -102,8 +85,9 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "DEVWAVE",
+  legalName: "DEVWAVE LIMITED",
   url: siteUrl,
-  logo: `${siteUrl}/logo.png`,
+  logo: `${siteUrl}/icon`,
   description:
     "Technology company building intelligent software, AI systems, automation solutions, and digital products.",
   email: "devwavelimited@gmail.com",
@@ -111,7 +95,6 @@ const organizationSchema = {
     "https://www.linkedin.com/company/145228972/",
     "https://www.instagram.com/devwavelimited",
     "https://www.facebook.com/profile.php?id=61594505496853",
-    "https://youtube.com/@devwavelimited",
   ],
 };
 
@@ -119,10 +102,8 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "DEVWAVE",
-  alternateName: "DEVWAVE LIMITED",
   url: siteUrl,
-  description:
-    "DEVWAVE - Technology. Innovation. Solutions.",
+  description: "DEVWAVE â€” Technology. Innovation. Solutions.",
 };
 
 export default function RootLayout({
