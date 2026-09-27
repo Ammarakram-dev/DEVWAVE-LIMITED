@@ -12,16 +12,18 @@ export const metadata: Metadata = {
   },
 
   title: {
-    default: "DEVWAVE - Technology. Innovation. Solutions.",
-    template: "%s | DEVWAVE",
+    default: "DEVWAVE LIMITED | Technology. Innovation. Solutions.",
+    template: "%s | DEVWAVE LIMITED",
   },
 
+  applicationName: "DEVWAVE LIMITED",
+
   description:
-    "DEVWAVE builds intelligent software, AI systems, automation solutions, digital products, and technology services for real-world problems.",
+    "DEVWAVE LIMITED builds intelligent software, AI systems, automation solutions, digital products, and technology services for real-world problems.",
 
   keywords: [
+    "DEVWAVE LIMITED",
     "DEVWAVE",
-    "DEVWAVE Limited",
     "Artificial Intelligence",
     "AI",
     "Machine Learning",
@@ -36,17 +38,15 @@ export const metadata: Metadata = {
     "Technology Solutions",
   ],
 
-  applicationName: "DEVWAVE",
-
   authors: [
     {
-      name: "DEVWAVE",
+      name: "DEVWAVE LIMITED",
       url: siteUrl,
     },
   ],
 
-  creator: "DEVWAVE",
-  publisher: "DEVWAVE",
+  creator: "DEVWAVE LIMITED",
+  publisher: "DEVWAVE LIMITED",
 
   alternates: {
     canonical: "/",
@@ -82,17 +82,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "DEVWAVE",
-    title: "DEVWAVE - Technology. Innovation. Solutions.",
+    siteName: "DEVWAVE LIMITED",
+    title: "DEVWAVE LIMITED | Technology. Innovation. Solutions.",
     description:
-      "Building intelligent software, AI systems, automation solutions, and digital technology for the real world.",
+      "DEVWAVE LIMITED builds intelligent software, AI systems, automation solutions, digital products, and technology services for real-world problems.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "DEVWAVE - Technology. Innovation. Solutions.",
+    title: "DEVWAVE LIMITED | Technology. Innovation. Solutions.",
     description:
-      "Building intelligent software, AI systems, automation solutions, and digital technology for the real world.",
+      "DEVWAVE LIMITED builds intelligent software, AI systems, automation solutions, digital products, and technology services for real-world problems.",
   },
 
   category: "technology",
@@ -101,11 +101,12 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "DEVWAVE",
+  name: "DEVWAVE LIMITED",
+  alternateName: "DEVWAVE",
   url: siteUrl,
   logo: `${siteUrl}/logo.png`,
   description:
-    "Technology company building intelligent software, AI systems, automation solutions, and digital products.",
+    "DEVWAVE LIMITED builds intelligent software, AI systems, automation solutions, digital products, and technology services for real-world problems.",
   email: "devwavelimited@gmail.com",
   sameAs: [
     "https://www.linkedin.com/company/145228972/",
@@ -118,11 +119,9 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "DEVWAVE",
-  alternateName: "DEVWAVE LIMITED",
+  name: "DEVWAVE LIMITED",
+  alternateName: "DEVWAVE",
   url: siteUrl,
-  description:
-    "DEVWAVE - Technology. Innovation. Solutions.",
 };
 
 export default function RootLayout({

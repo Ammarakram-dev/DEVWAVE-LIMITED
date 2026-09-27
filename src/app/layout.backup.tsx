@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "DEVWAVE â€” Technology. Innovation. Solutions.",
+    default: "DEVWAVE LIMITED | Technology. Innovation. Solutions.",
     template: "%s | DEVWAVE",
   },
 
@@ -66,14 +66,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "DEVWAVE",
-    title: "DEVWAVE â€” Technology. Innovation. Solutions.",
+    title: "DEVWAVE LIMITED | Technology. Innovation. Solutions.",
     description:
       "Building intelligent software, AI systems, automation solutions, and digital technology for the real world.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "DEVWAVE â€” Technology. Innovation. Solutions.",
+    title: "DEVWAVE LIMITED | Technology. Innovation. Solutions.",
     description:
       "Building intelligent software, AI systems, automation solutions, and digital technology for the real world.",
   },
@@ -103,7 +103,7 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "DEVWAVE",
   url: siteUrl,
-  description: "DEVWAVE â€” Technology. Innovation. Solutions.",
+  description: "DEVWAVE LIMITED | Technology. Innovation. Solutions.",
 };
 
 export default function RootLayout({
